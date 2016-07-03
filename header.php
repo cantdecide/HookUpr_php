@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title><?= $title ?></title>
+	<link rel="icon" href="icon.png">
     <?php foreach($stylesheets as $stylesheet) { ?>
 		<link rel="stylesheet" href="<?= $stylesheet ?>">
 	<?php } ?>
@@ -17,5 +18,6 @@
           <div class="navClass" id="home"><a href="index.php">Home</a></div>
           <div class="navClass" id="about"><a href="about.php">About</a></div>
           <div class="navClass" id="contact"><a href="contact.php">Contact</a></div>
+          <div class="navClass" id="hookups"><a href="hookups.php">Hookups</a></div>
         </div>
       </header>

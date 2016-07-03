@@ -40,6 +40,9 @@ h3 {
 #contact {
   float: left;
 }
+#hookups {
+	float: left;
+}
 #navItems {
   float: right;
 }
@@ -148,8 +151,26 @@ input:checked ~ .button {
   margin-bottom: 30px;
 }
 
+form {
+	position: relative;
+}
+
 form input {
 	display: none;
+}
+
+.submit {
+	display: inline-block;
+	position: absolute;
+	bottom: -80px;
+	margin-bottom: 40px;
+	width: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.inline {
+	display: inline-block;
 }
 
 label {
@@ -187,4 +208,98 @@ input + label {
 }
 input:checked + label {
 	color: black;
+}
+.errors {
+	background-color: #ff9898;
+	display: inline-block;
+	border-radius: 7px;
+	padding: 7px;
+	position: relative;
+}
+.all-hookups {
+	margin-top: 120px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border-collapse: collapse;
+}
+.all-hookups tbody {
+	overflow-x: auto;
+}
+.all-hookups tr {
+	text-align: center;
+	padding: 5px;
+	border: 1px solid black;
+}
+.all-hookups tr:hover {
+	background-color: #ffebd1;
+}
+.all-hookups td {
+	border: 1px solid black;
+	padding: 5px;
+}
+.all-hookups thead {
+	font-weight: bold;
+}
+.underline:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.sure {
+	font-size: 24px;
+	display: inline-block;
+	position: absolute;
+	top: 160px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+}
+.tbl-delete {
+	top: 120px;
+}
+.bottom-buttons {
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 400px;
+}
+.bottom-buttons a {
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 4px;
+	transition: all 200ms;
+}
+.bottom-buttons a:hover {
+	cursor: pointer;
+	background-color: #ffebd1;
+	transform: scale(1.1);
+	border: 1px solid rgba(0, 0, 0, 0.74);
+}
+#deleted {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 15px 30px 15px 30px;
+	border-radius: 7px;
+	top: 100px;
+	background-color: #E0F0D5;
+	color: #417634;
+}
+#x {
+	color: grey;
+	font-size: 21px;
+	position: relative;
+	left: 10px;
+}
+#x:hover {
+	color: #b3b3b3;
+	cursor: pointer;
+}
+#my_form input {
+	display: inline-block;
+	visibility: hidden;
 }

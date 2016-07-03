@@ -18,7 +18,7 @@ show_header('HookUpr', $stylesheets);
       </div>
     </div>
   </div>
-  <script type="text/javascript">
+  <script>
     document.getElementById("button").addEventListener("click", goToHookupr);
     function goToHookupr() {
       window.location.href="hookupr.php";
